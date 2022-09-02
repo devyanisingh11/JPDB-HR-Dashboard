@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            var myStatus="out";
+            var myName="reg";
+        </script>
+        <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script type="text/javascript"  src="resources/js.common.js"></script>
+        <script type="text/javascript" src="resources/js/register.js"></script>
+        <script>checkSession(myStatus, myName);</script>
+    </head>
+    <body >
+        <div class="container">
+<div class="row">
+    <div class="dashboard">
+        <ul class="list-inline">
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+</div>
+            <h1 align="center">Register User</h1>
+            <form id="home" method="post" >
+                <div class="form-group row">
+                    <span><label  class="col-form-label col-sm-4 text-center m-auto" for="name">Name:</label></span>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-control" name="name" id="name">
+                    </div></div>
+                <div class="form-group row">
+                    <span><label  class="col-form-label col-sm-4 text-center m-auto" for="email">Email:</label></span>
+                    <div class="col-sm-6">
+                    <input type="email" class="form-control" name="email" id="email">
+                    </div></div>
+                <div class="form-group row">
+                    <span><label  class="col-form-label col-sm-4 text-center m-auto" for="phone">Phone:</label></span>
+                    <div class="col-sm-6">
+                    <input type="number" class="form-control" name="phone" id="phone">
+                    </div></div>
+                <div class="form-group row">
+                    <span><label class="col-form-label col-sm-4 text-center m-auto" for="pwd">Password:</label></span>
+                    <div class="col-sm-6">
+                    <input type="password" class="form-control" name="pwd" id="pwd">
+                    </div></div>
+                <div class="form-group row">
+                    <span><label class="col-form-label col-sm-4 text-center m-auto" for="repwd">Re-Type Password:</label></span>
+                    <div class="col-sm-6">
+                    <input type="password" class="form-control" name="repwd" id="repwd">
+                    </div></div>
+            </form>
+            <div>
+                <nav class="navbar navbar-default" style="border:none; text-align: center">
+                    <button type="button" class="btn btn-lg btn-primary" id="submit" onclick="addData()">Submit</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="reset()">Reset</button>
+                </nav>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

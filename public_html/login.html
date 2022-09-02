@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            var myStatus="out";
+            var myName="login";
+        </script>
+        <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script type="text/javascript"  src="resources\js\common.js"></script>
+        <script type="text/javascript" src="resources/js/login.js"></script>
+        <script>checkSession(myStatus, myName);</script>
+    </head>
+    <body >
+        <div class="container">
+<div class="row">
+    <div class="dashboard">
+        <ul class="list-inline">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="forgot.html">Forgot Password</a></li>
+        </ul>
+    </div>
+</div>
+            <h1 align="center">Login</h1>
+            <form id="home" method="post" >
+                <div class="form-group row">
+                    <span><label  class="col-form-label col-sm-4 text-center m-auto" for="email">Email:</label></span>
+                    <div class="col-sm-6">
+                    <input type="email" class="form-control" name="email" id="email" onchange="">
+                    </div></div>
+                <div class="form-group row">
+                    <span><label class="col-form-label col-sm-4 text-center m-auto" for="pwd">Password:</label></span>
+                    <div class="col-sm-6">
+                    <input type="password" class="form-control" name="pwd" id="pwd" onchange="">
+                    </div></div>
+            </form>
+            <div>
+                        <nav class="navbar navbar-default" style="border:none; text-align: center">
+                            <button type="button" class="btn btn-lg btn-primary" id="login" onclick="checkUser()">Login</button>
+                        
+                        </nav>
+                    </div>
+            
+            <h3 id="mymsg"></h3>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

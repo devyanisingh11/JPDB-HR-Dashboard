@@ -1,0 +1,78 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 10-Aug-2022, 12:06:59 am
+    Author     : PS CHAUDHARY
+*/
+
+.page-header{
+    margin:5px;
+    margin-right: 5px;
+    text-align: right;
+    position: fixed;
+}
+
+div>a{
+    font-size: 1.25cm;
+}
+
+.dashboard{
+    text-align: right;
+    padding: 5px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: steelblue;
+    color: white;
+    border-radius: 5px;
+}
+
+li>a{
+    color: white;
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none;
+}
+
+#mymsg, #myEmpFormMsg, #myRegFormMsg{
+    font-size: 125;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.active, a:hover{
+    background-color: white;
+    padding: 5px;
+    color:black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form{
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+legend{
+    padding-top: 2%;
+}
+
+.navbar-default{
+    background-color: white;
+}
+
+.page-footer{
+    
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    background-color: steelblue;
+    color: white;
+    border-radius: 5px;
+}

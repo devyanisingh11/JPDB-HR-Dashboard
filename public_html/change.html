@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Change Password</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            var myStatus="in";
+            var myName="change";
+        </script>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script src="resources/js/common.js"></script>
+        <script src="resources/js/change.js"></script>
+        <script>checkSession(myStatus, myName);</script>
+    </head>
+    
+    <body>
+        <div class="containeriner">
+            <div id="myheader"></div>
+            <div class="row text-center">
+                <div class="myform">
+                    <fieldset>
+                        <form id="empForm" method="post">
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-4 text-right m-auto">Old Password:</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="oldpwd" id="oldpwd" onchange="check()">
+                    </div></div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-4 text-right m-auto">New Password:</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="newpwd" id="newpwd">
+                    </div></div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-4 text-right m-auto">Re-type Password:</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="repwd" id="repwd">
+                    </div></div>
+                
+                <div align="center">
+                    <input type="button" class="btn btn-primary" id="changepwd" value="Change Password"
+                           onclick="changePassword()">
+                </div>
+                            
+                            <div id="mymsg"></div>
+            </form>
+                    </fieldset>
+                    
+                </div>
+                <div id="myfooter"></div>
+            </div>
+            
+           </div>
+        <script>
+            loadheader();
+            loadfooter();
+        </script>
+    </body>
+    
+</html>

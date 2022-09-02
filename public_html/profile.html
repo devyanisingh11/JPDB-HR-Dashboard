@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            var myStatus="in";
+            var myName="profile";
+        </script>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script src="resources/js/common.js"></script>
+        <script src="resources/js/profile.js"></script>
+        <script>checkSession(myStatus, myName);</script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div id="myheader"></div>
+            <div class="row text-center">
+                <div class="myform">
+                    <fieldset>
+                        <form id="empform" method="post">
+                            <h2>User Profile</h2>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-4 text-right m-auto">Email: </label>
+                                <div class="col-sm-4">
+                                    <input type="text" id="proemail" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-4 text-right m-auto">Name: </label>
+                                <div class="col-sm-4">
+                                    <input type="text" id="proname" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-4 text-right m-auto">Phone: </label>
+                                <div class="col-sm-4">
+                                    <input type="text" id="prophone" class="form-control" disabled>
+                                </div>
+                            </div>
+                        </form>
+                    </fieldset>
+                    <div>
+                        <nav class="navbar navbar-default" style="border:none; text-align: center">
+                            <button type="button" class="btn btn-lg btn-primary" id="save" onclick="changeData()" disabled>Save</button>
+                            <button type="button" class="btn btn-lg btn-primary" id="edit" onclick="enableChange()">Edit</button>
+                        
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="myfooter"></div>
+           </div>
+        <script>
+            loadheader();
+            loadfooter();
+            showUser();
+        </script>
+    </body>
+    
+</html>
