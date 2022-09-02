@@ -10,15 +10,15 @@ JsonPowerDB is a Real-time, High Performance, Lightweight and Simple to Use, Res
 <li>It helps developers in faster coding, in-turn reduces development cost.</li></ul>
 <h3>Description of the project:</h3>
 <p>This is an HR Admin Dashbaord project that consists of the following logged-in and logged out pages:
-<br>Logged-out pages:
-<ul><li>Registration Page</li>
-<li>Login Page</li>
-<li>Forgot Password</li>
+<br><B>Logged-out pages:</B>
+<ul><li>Registration Page<br><img src="public_html/resources/img/register new user.jpg"></li>
+<li>Login Page<br><img src="public_html/resources/img/login page.jpg"></li>
+<li>Forgot Password<br><img src="public_html/resources/img/forgot password page.jpg"></li>
 </ul>
-Logged-in pages:
-<ul><li>Home Page</li>
-<li>Profile Page</li>
-<li>Add Employee Page</li>
-<li>Change Password Page</li>
+<B>Logged-in pages:</B>
+<ul><li>Home Page<br><img src="public_html/resources/img/home page.jpg"></li>
+<li>Profile Page<br><img src="public_html/resources/img/profile page.jpg"></li>
+<li>Add Employee Page<br><img src="public_html/resources/img/add employee page.jpg"></li>
+<li>Change Password Page<br><img src="public_html/resources/img/change password.jpg"></li>
 <li>Logout Button</li></ul>
 These pages have been logically linked using hyperlinks with proper page-flow. jpdb-commons.js has been imported in the project for easy access of jpdb operations.</p>
